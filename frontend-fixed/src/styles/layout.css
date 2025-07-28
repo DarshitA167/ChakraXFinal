@@ -1,0 +1,38 @@
+/* styles/layout.css */
+.navbar,
+.footer {
+    background-color: #1e293b;
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 12px;
+    margin: 0.5rem;
+}
+
+.navbar img {
+    width: 50px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #38bdf8;
+}
+
+.footer {
+    justify-content: center;
+    font-size: 0.9rem;
+    color: #94a3b8;
+}
