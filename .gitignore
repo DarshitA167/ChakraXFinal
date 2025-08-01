@@ -1,3 +1,10 @@
-backend/ml_models/physical/v1/disease_model.pklbackend/ml_models/physical/v1/disease_model.pkl
-backend/ml_models/physical/v1/disease_model.pkl
+__pycache__/
+node_modules/
+env/
+venv/
+*.sqlite3
+*.pyc
+*.pkl
+frontend-fixed/build/
+frontend-fixed/.DS_Store
 backend/ml_models/physical/v1/disease_model.pkl
