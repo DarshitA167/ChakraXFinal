@@ -8,3 +8,4 @@ venv/
 frontend-fixed/build/
 frontend-fixed/.DS_Store
 backend/ml_models/physical/v1/disease_model.pkl
+*.pkl
