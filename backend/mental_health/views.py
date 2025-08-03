@@ -40,4 +40,4 @@ def mental_chat(request):
     result = openrouter_chatbot(messages)
 
 
-    return Response({"response": response_text or "openrouter couldn't reply 🤖💤."})
+    return Response({"response": result or "openrouter couldn't reply 🤖💤."})

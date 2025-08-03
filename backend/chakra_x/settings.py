@@ -29,8 +29,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-lw^irp_+7n6r!s406e81temuqh=sp&=q1)nmeqp%di47fix!i0'
 
-GEMINI_API_KEY = config("GEMINI_API_KEY", default=None)
-print("DEBUG: Gemini Key =", GEMINI_API_KEY)
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -52,6 +50,7 @@ INSTALLED_APPS = [
     'accounts',
     'security',
     'mental_health',
+    'cybersecurity',
     "corsheaders",
 ]
 
