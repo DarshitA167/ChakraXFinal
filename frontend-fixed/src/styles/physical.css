@@ -1,0 +1,59 @@
+.physical-container {
+    max-width: 500px;
+    margin: 4rem auto;
+    padding: 2rem;
+    background: linear-gradient(145deg, #1a1a2e, #0f0f23);
+    border: 1px solid rgba(0, 255, 255, 0.2);
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
+    color: #ffffff;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.physical-title {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #00f9ff;
+    text-align: center;
+}
+
+.symptom-input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background: #262640;
+    color: #fff;
+    margin-bottom: 15px;
+    outline: none;
+}
+
+.diagnose-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #00f9ff;
+    color: #0f0f23;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.diagnose-button:hover {
+    background-color: #00c8d6;
+}
+
+.diagnose-button:disabled {
+    background-color: #005c66;
+    cursor: not-allowed;
+}
+
+.result-box {
+    background: #1e1e3f;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-top: 1.5rem;
+    color: #ccfaff;
+    border: 1px solid rgba(0, 255, 255, 0.2);
+}

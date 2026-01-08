@@ -1,0 +1,84 @@
+.home-container {
+    min-height: 100vh;
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, #0f0f23, #1a1a2e);
+    color: white;
+    text-align: center;
+}
+
+.dashboard-title {
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.highlight {
+    color: #00f7ff;
+    text-shadow: 0 0 10px #00f7ff;
+}
+
+.dashboard-subtitle {
+    font-size: 1.2rem;
+    color: #cccccc;
+    margin-bottom: 3rem;
+}
+
+.tile-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tile {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    color: white;
+    text-decoration: none;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.05);
+}
+
+.tile:hover {
+    transform: translateY(-10px) scale(1.03);
+    background: rgba(0, 255, 255, 0.08);
+    border-color: rgba(0, 255, 255, 0.3);
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.25);
+}
+
+.tile-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1rem;
+}
+
+.tile h3 {
+    font-size: 1.2rem;
+    color: #00f7ff;
+    margin-bottom: 0.5rem;
+}
+
+.tile p {
+    font-size: 0.95rem;
+    color: #cccccc;
+}
+
+.author-section {
+    margin-top: 4rem;
+    font-size: 0.95rem;
+    color: #aaa;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 2rem;
+}
+
+.author-name {
+    color: #00f7ff;
+    font-weight: bold;
+}

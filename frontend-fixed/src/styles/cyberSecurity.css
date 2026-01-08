@@ -1,0 +1,134 @@
+.cyber-container {
+    max-width: 800px;
+    margin: 4rem auto;
+    padding: 2rem;
+    background: linear-gradient(135deg, #0f0f23, #1a1a2e);
+    color: #ffffff;
+    font-family: 'Segoe UI', sans-serif;
+    border-radius: 16px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
+}
+
+.cyber-title {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #00f9ff;
+    margin-bottom: 2rem;
+}
+
+.cyber-email-input {
+    width: 100%;
+    padding: 12px;
+    background: #262640;
+    border: 1px solid rgba(0, 255, 255, 0.2);
+    color: #ffffff;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    outline: none;
+}
+
+.cyber-check-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #00f9ff;
+    color: #0f0f23;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.cyber-check-btn:hover {
+    background-color: #00c8d6;
+}
+
+.cyber-demo-button {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.cyber-btn-demo {
+    background-color: #444;
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cyber-btn-demo:hover {
+    background-color: #666;
+}
+
+.cyber-alert {
+    margin-top: 1rem;
+    background-color: #ffcc00;
+    padding: 12px;
+    color: #0f0f23;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.cyber-result-card {
+    margin-top: 2rem;
+    background-color: #1f1f3f;
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 255, 255, 0.15);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+}
+
+.cyber-breach-title {
+    color: #ff5c5c;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.cyber-breach-list {
+    list-style: disc;
+    padding-left: 1.5rem;
+    color: #ffb3b3;
+}
+
+.cyber-safe-text {
+    color: #00ff99;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.cyber-phishing-result {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(0, 255, 255, 0.2);
+}
+
+.cyber-download-btn {
+    margin-top: 1.5rem;
+    padding: 10px 20px;
+    background-color: #00f9ff;
+    color: #0f0f23;
+    font-weight: bold;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.cyber-download-btn:hover {
+    background-color: #00c2d1;
+}
+
+.cyber-debug-json {
+    margin-top: 2rem;
+    background: #12122a;
+    padding: 1rem;
+    border-radius: 8px;
+    color: #b5f5ff;
+    font-size: 0.85rem;
+    overflow-x: auto;
+    border: 1px dashed rgba(0, 255, 255, 0.2);
+}

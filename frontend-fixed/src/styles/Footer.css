@@ -1,0 +1,13 @@
+.footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #0f0f23;
+    color: #cccccc;
+    font-size: 0.95rem;
+    border-top: 1px solid rgba(0, 255, 255, 0.1);
+}
+
+.footer-brand {
+    color: #00f9ff;
+    font-weight: bold;
+}
