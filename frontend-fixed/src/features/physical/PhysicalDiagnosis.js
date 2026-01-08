@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../../styles/physical.css";
 // @ts-ignore
 import { diagnoseDisease } from "../../services/physicalHealth";
 
@@ -8,6 +9,7 @@ const PhysicalDiagnosis = () => {
   const [loading, setLoading] = useState(false);
 
   const handleSubmit = async () => {
+    if (!symptoms.trim()) return;
     setLoading(true);
     const data = await diagnoseDisease(symptoms);
     setResult(data);
@@ -15,25 +17,27 @@ const PhysicalDiagnosis = () => {
   };
 
   return (
-    <div style={{ padding: "20px", maxWidth: "400px", margin: "auto" }}>
-      <h2>Physical Security - Disease Diagnosis</h2>
+    <div className="physical-container">
+      <h2 className="physical-title">🩺 Physical Security — Disease Diagnosis</h2>
+      
       <input
+        className="symptom-input"
         type="text"
         value={symptoms}
         onChange={(e) => setSymptoms(e.target.value)}
         placeholder="Enter symptoms (e.g., cough, fever)"
-        style={{ width: "100%", padding: "10px", marginBottom: "10px" }}
       />
+
       <button
+        className="diagnose-button"
         onClick={handleSubmit}
-        style={{ width: "100%", padding: "10px", background: "black", color: "white" }}
         disabled={loading}
       >
-        {loading ? "Checking..." : "Check Disease"}
+        {loading ? "Scanning..." : "Check Disease"}
       </button>
 
       {result && (
-        <div style={{ marginTop: "15px", background: "#f5f5f5", padding: "10px" }}>
+        <div className="result-box">
           <p><strong>Disease:</strong> {result.disease}</p>
           <p><strong>Advice:</strong> {result.advice}</p>
         </div>

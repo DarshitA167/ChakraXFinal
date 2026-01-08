@@ -1,0 +1,132 @@
+.mentalchat-container {
+    max-width: 800px;
+    margin: 4rem auto;
+    padding: 2rem;
+    background: linear-gradient(135deg, #0f0f23, #1a1a2e);
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+    color: #ffffff;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+}
+
+.mentalchat-title {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #00f9ff;
+}
+
+.chat-box {
+    flex: 1;
+    overflow-y: auto;
+    background-color: #181827;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    scroll-behavior: smooth;
+}
+
+.message {
+    max-width: 80%;
+    margin: 0.4rem 0;
+    padding: 0.75rem 1rem;
+    border-radius: 10px;
+    line-height: 1.4;
+    word-break: break-word;
+    white-space: pre-wrap;
+}
+
+.user-message {
+    align-self: flex-end;
+    background-color: #0066ff;
+    color: #ffffff;
+    border-top-right-radius: 0;
+}
+
+.bot-message {
+    align-self: flex-start;
+    background-color: #1e3d59;
+    color: #ccfaff;
+    border-top-left-radius: 0;
+}
+
+.input-section {
+    display: flex;
+    gap: 10px;
+}
+
+.message-input {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #2c2c3f;
+    color: #ffffff;
+    outline: none;
+    font-size: 1rem;
+}
+
+.send-button {
+    background-color: #00f9ff;
+    color: #0f0f23;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.send-button:hover {
+    background-color: #00d0e3;
+}
+
+.question-block {
+    background: #1e1e3f;
+    border: 1px solid rgba(0, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 1.2rem 1.5rem;
+    margin-bottom: 2rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 255, 255, 0.05);
+}
+
+.question-block:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 14px rgba(0, 255, 255, 0.2);
+    border-color: rgba(0, 255, 255, 0.3);
+}
+
+.question-text {
+    font-weight: 600;
+    color: #00f9ff;
+    margin-bottom: 0.75rem;
+    font-size: 1.05rem;
+}
+
+.quiz-select,
+.quiz-input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    background: #2c2c47;
+    color: #ffffff;
+    border: 1px solid rgba(0, 255, 255, 0.15);
+    outline: none;
+    font-size: 1rem;
+    transition: 0.2s ease;
+}
+
+.quiz-select:focus,
+.quiz-input:focus {
+    border-color: #00f9ff;
+    background: #3a3a5e;
+}
+
+.send-button:disabled {
+    background-color: #004d66;
+    cursor: not-allowed;
+}

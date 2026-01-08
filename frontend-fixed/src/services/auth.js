@@ -1,14 +1,19 @@
-import axios from "axios";
+import axios from 'axios'
 
-// Proxy is already set in package.json → "/api" automatically forwards to Django
+const BASE_URL = 'http://127.0.0.1:8000/api'  // or your backend IP
 
-export const registerUser = (username, email, password) =>
-  axios.post("/api/auth/signup/", { username, email, password });
+export const registerUser = async (data) => {
+  return axios.post(`${BASE_URL}/register/`, data)
+}
 
-export const loginUser = (username, password) =>
-  axios.post("/api/auth/login/", { username, password });
+export const loginUser = async (data) => {
+  return axios.post(`${BASE_URL}/login/`, data)
+}
 
-export const getProfile = (token) =>
-  axios.get("/api/auth/profile/", {
-    headers: { Authorization: `Bearer ${token}` },
-  });
+export const getCurrentUser = async (token) => {
+  return axios.get(`${BASE_URL}/user/`, {
+    headers: {
+      Authorization: `Bearer ${token}`
+    }
+  })
+}

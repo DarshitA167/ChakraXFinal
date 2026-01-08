@@ -15,6 +15,49 @@
   /* default glow */
 }
 
+.calibration-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(20, 20, 20, 0.8);
+  z-index: 99999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.calibration-box {
+  text-align: center;
+  padding: 30px;
+  background: #111;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.calibration-box .loader {
+  border: 5px solid #333;
+  border-top: 5px solid #09f;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 20px auto;
+  animation: spin 1.2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .floating-cam.dragging {
   opacity: 0.8;
   cursor: grabbing !important;
@@ -170,4 +213,77 @@
   margin-right: 10px;
   border-radius: 50%;
   border: 2px solid #38bdf8;
+}
+
+/* ⌨️ Typing animation effect */
+.typing-text {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #38bdf8;
+  animation: typing 2.5s steps(30, end), blink-caret 0.75s step-end infinite;
+  font-size: 14px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #38bdf8;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+
+  from,
+  to {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: #38bdf8;
+  }
+}
+
+.webcam-loader-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  color: #0ff;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 12px;
+  z-index: 2;
+}
+
+.webcam-loader {
+  border: 3px solid #0ff;
+  border-top: 3px solid transparent;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  animation: spin 1s linear infinite;
+  margin-bottom: 8px;
+}
+
+.typing-text {
+  text-align: center;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
 }
