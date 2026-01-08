@@ -118,7 +118,7 @@ DEBUG=True
 
 | Security Dashboard | Mental Health Chat |
 |:---:|:---:|
-| <img src="chakrax-dashboard.png" width="400" /> | <video src="chatbot_demo.mov" width="400" controls autoplay loop muted></video> |
+| <img src="chakrax-dashboard.png" width="400" /> | [![Chatbot Demo](https://via.placeholder.com/400x250.png?text=Click+to+Watch+Demo)](chatbot_demo.mov) |
 
 <div align="center">
   <br />
