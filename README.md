@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🛡️ ChakraX 🧠
+# 🛡️ ChakraX  - Defence In All Dimensions 
 ### *The Future of Integrated Security & Wellness*
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
