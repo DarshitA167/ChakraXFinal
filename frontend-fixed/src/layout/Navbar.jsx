@@ -22,23 +22,23 @@ const Navbar = () => {
   const { logout } = useAuth();
 
   return (
-    <nav className="navbar">
-      <div className="navbar-logo">
+    <nav className="navbar" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '1rem', background: '#0f0f23' }}>
+      <div className="navbar-logo" style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
         <img
           src={logos[pathname] || HomeIcon}
           alt="Logo"
           className="navbar-icon"
+          style={{ height: '50px', width: '50px', objectFit: 'contain' }}
         />
-        
-        <span className="navbar-title">ChakraX</span>
+        <span className="navbar-title" style={{ color: '#00f9ff', fontSize: '1.4rem', fontWeight: 'bold' }}>ChakraX</span>
       </div>
-      <div className="navbar-links">
-        <Link to="/home">Home</Link>
-        <Link to="/physical">Physical</Link>
-        <Link to="/mental">Mental</Link>
-        <Link to="/vault">Password</Link>
-        <Link to="/cyber">Cyber</Link>
-        <button className="logout-btn" onClick={logout}>Logout</button>
+      <div className="navbar-links" style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
+        <Link to="/home" style={{ color: '#e0e0e0', textDecoration: 'none', fontWeight: '500' }}>Home</Link>
+        <Link to="/physical" style={{ color: '#e0e0e0', textDecoration: 'none', fontWeight: '500' }}>Physical</Link>
+        <Link to="/mental" style={{ color: '#e0e0e0', textDecoration: 'none', fontWeight: '500' }}>Mental</Link>
+        <Link to="/vault" style={{ color: '#e0e0e0', textDecoration: 'none', fontWeight: '500' }}>Password</Link>
+        <Link to="/cyber" style={{ color: '#e0e0e0', textDecoration: 'none', fontWeight: '500' }}>Cyber</Link>
+        <button className="logout-btn" onClick={logout} style={{ marginLeft: '10px' }}>Logout</button>
       </div>
     </nav>
   );
