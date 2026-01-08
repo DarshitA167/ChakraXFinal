@@ -12,7 +12,7 @@
 <br />
 
 <p align="center">
-  <img src="https://via.placeholder.com/800x400.png?text=ChakraX+Dashboard+Preview" alt="ChakraX Dashboard" width="100%" />
+  <img src="chakrax-dashboard.png" alt="ChakraX Dashboard" width="100%" />
 </p>
 
 </div>
